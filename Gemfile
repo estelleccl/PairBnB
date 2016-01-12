@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # User Authorization
 gem 'clearance'
 
+# make it easy to securely configure Rails applications.
+gem 'figaro'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
