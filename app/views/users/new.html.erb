@@ -1,0 +1,19 @@
+<div id="clearance" class="sign-up">
+  <h2><%= t(".title") %></h2>
+
+  <%= form_for @user do |form| %>
+    <%= render partial: '/users/form', object: form %>
+
+    <div class="submit-field">
+      <%= form.submit %>
+    </div>
+
+    <div class="other-links">
+      <%= link_to t(".sign_in"), sign_in_path %>
+    </div>
+  <% end %>
+
+  <%= link_to omniauth_authorize_path(resource_name, provider), class: "btn btn-block btn-social btn-#{provider.to_s.titleize.downcase}" do %>
+                  <i class="fa fa-<%= provider.to_s.titleize.downcase %>"></i> Sign Up with <%= provider.to_s.titleize %>
+                <% end %>
+</div>

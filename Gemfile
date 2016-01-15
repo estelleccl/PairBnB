@@ -29,6 +29,10 @@ gem 'clearance'
 # make it easy to securely configure Rails applications.
 gem 'figaro'
 
+#Facebook OAuth2 Strategy for OmniAuth.
+gem 'omniauth-facebook'
+gem 'omniauth'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
